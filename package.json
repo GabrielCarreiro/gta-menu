@@ -1,0 +1,17 @@
+{
+  "name": "gta-menu",
+  "version": "1.0.0",
+  "description": "GTA SA MENU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify-js": "cd ./js && minify gtasamap.js > gtasamap.min.js && minify gtasamenu.js > gtasamenu.min.js",
+    "minify-css": "cd ./css && minify gtasamenu.css > gtasamenu.min.css && minify normalize.css > normalize.min.css",
+    "build": "npm run minify-js && npm run minify-css && mkdir dist && cp -r ./* /usr/share/nginx/html/ && echo Build success"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minify": "^10.3.0"
+  }
+}

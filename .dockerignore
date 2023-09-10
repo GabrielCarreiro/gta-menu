@@ -1,0 +1,19 @@
+# Ignorar arquivos e diretórios que não são necessários na imagem
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.DS_Store
+*.log
+*.bak
+*.swp
+*.swo
+
+# Ignorar arquivos específicos de IDEs
+.vscode
+.idea
+*.sublime-*
+
+# Ignorar arquivos de build ou distribuição (se aplicável)
+dist
+build
